@@ -1,0 +1,242 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation bar: Image and Logo */
+#logo {
+    margin: 10px 34px;
+    
+
+}
+
+#logo img {
+    margin: 3px 6px;
+    height: 90px;
+    /* filter: invert(100%); */
+
+}
+
+
+/* Navigation bar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Crimson Text', serif;
+    
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li {
+    list-style: none;
+    /* font-size: 1.4 rem; */
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Crimson Text', serif;
+}
+
+/* Services Section */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid grey;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 20px;
+    background-color: lightgray;    
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+
+
+/* Client section */
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section {
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.client-item {
+    padding: 34px ;
+}
+
+#clients img {
+    height: 124px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Crimson Text', serif;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Crimson Text', serif;
+
+}
+
+.h-secondary {
+    font-size: 2.1rem;
+    padding: 12px;
+    font-family: 'Crimson Text', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.center {
+    text-align: center;
+}
