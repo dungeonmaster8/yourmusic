@@ -220,8 +220,7 @@ footer {
     padding: 12px;
     font-family: 'Crimson Text', serif;
 }
-
-.btn {
+#btn {
     padding: 6px 20px;
     border: 2px solid white;
     background-color: black;
@@ -232,7 +231,7 @@ footer {
     cursor: pointer;
 }
 
-.btn:hover {
+#btn:hover {
     color: black;
     background-color: lightgray;
 }
